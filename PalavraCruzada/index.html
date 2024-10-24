@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Palavra Cruzada - NoSQL</title>
+</head>
+<body>
+    <h1>Palavra Cruzada - NoSQL</h1>
+
+    <!-- Grade da palavra cruzada -->
+    <div class="crossword" id="crossword-grid">
+        <!-- Linha 1 -->
+        <div><span class="number">1</span><input type="text" maxlength="1" data-answer="C"></div>
+        <div><input type="text" maxlength="1" data-answer="H"></div>
+        <div><input type="text" maxlength="1" data-answer="A"></div>
+        <div><input type="text" maxlength="1" data-answer="V"></div>
+        <div><input type="text" maxlength="1" data-answer="E"></div>
+        <div><input type="text" maxlength="1"></div>
+        <div><input type="text" maxlength="1"></div>
+        <div><input type="text" maxlength="1"></div>
+        <div><input type="text" maxlength="1"></div>
+        <div><input type="text" maxlength="1"></div>
+
+        <!-- Linha 2 -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <!-- Linha 3 -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div><span class="number">2</span><input type="text" maxlength="1" data-answer="E"></div>
+        <div><input type="text" maxlength="1" data-answer="S"></div>
+        <div><input type="text" maxlength="1" data-answer="C"></div>
+        <div><input type="text" maxlength="1" data-answer="A"></div>
+        <div><input type="text" maxlength="1" data-answer="L"></div>
+        <div><input type="text" maxlength="1" data-answer="A"></div>
+        <div><input type="text" maxlength="1" data-answer="B"></div>
+
+        <!-- Linha 4 -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <!-- Linha 5 -->
+        <div><span class="number">4</span><input type="text" maxlength="1" data-answer="M"></div>
+        <div><input type="text" maxlength="1" data-answer="O"></div>
+        <div><input type="text" maxlength="1" data-answer="N"></div>
+        <div><input type="text" maxlength="1" data-answer="G"></div>
+        <div><input type="text" maxlength="1" data-answer="O"></div>
+        <div><input type="text" maxlength="1"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <!-- Linha 6 -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div><span class="number">5</span><input type="text" maxlength="1" data-answer="S"></div>
+        <div><input type="text" maxlength="1" data-answer="H"></div>
+        <div><input type="text" maxlength="1" data-answer="A"></div>
+        <div><input type="text" maxlength="1" data-answer="R"></div>
+        <div><input type="text" maxlength="1" data-answer="D"></div>
+        <div><input type="text" maxlength="1" data-answer="I"></div>
+        <div><input type="text" maxlength="1" data-answer="N"></div>
+
+        <!-- Linha 7 -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div><span class="number">7</span><input type="text" maxlength="1" data-answer="D"></div>
+        <div><input type="text" maxlength="1" data-answer="O"></div>
+        <div><input type="text" maxlength="1" data-answer="C"></div>
+        <div></div>
+        <div></div>
+
+        <!-- Linha 8 -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <!-- Linha 9 -->
+        <div></div>
+        <div><span class="number">9</span><input type="text" maxlength="1" data-answer="C"></div>
+        <div><input type="text" maxlength="1" data-answer="A"></div>
+        <div><input type="text" maxlength="1" data-answer="S"></div>
+        <div><input type="text" maxlength="1" data-answer="S"></div>
+        <div><input type="text" maxlength="1" data-answer="A"></div>
+        <div><input type="text" maxlength="1" data-answer="N"></div>
+        <div><input type="text" maxlength="1" data-answer="D"></div>
+        <div><input type="text" maxlength="1" data-answer="R"></div>
+        <div><input type="text" maxlength="1" data-answer="A"></div>
+
+        <!-- Linha 10 -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Dicas das palavras -->
+    <div class="clue-container">
+        <h2>Dicas</h2>
+
+        <h3>Horizontais:</h3>
+        <ul>
+            <li><strong>1.</strong> Tipo de NoSQL baseado em ____, que armazena dados em pares chave-valor.</li>
+            <li><strong>4.</strong> Popular banco de dados NoSQL de código aberto, muito usado para grandes volumes de dados não estruturados.</li>
+            <li><strong>5.</strong> Técnica usada em NoSQL para distribuir dados por vários servidores.</li>
+            <li><strong>7.</strong> Estrutura de dados usada por bancos de dados NoSQL para armazenar documentos.</li>
+            <li><strong>9.</strong> Banco de dados NoSQL que usa uma estrutura orientada a colunas, como o Apache ____.</li>
+        </ul>
+
+        <h3>Verticais:</h3>
+        <ul>
+            <li><strong>2.</strong> Atributo essencial de bancos de dados NoSQL que lida com múltiplas réplicas e a tolerância a falhas.</li>
+            <li><strong>3.</strong> Sigla para banco de dados baseado em pares chave-valor.</li>
+            <li><strong>6.</strong> Banco de dados NoSQL baseado em documentos, amplamente usado na web moderna.</li>
+            <li><strong>8.</strong> Consistência, Disponibilidade e Particionamento são características representadas pelo teorema ____.</li>
+        </ul>
+    </div>
+
+    <!-- Botão para validar -->
+    <div class="button-container">
+        <button class="validate-btn" onclick="validateCrossword()">Validar</button>
+    </div>
+
+    <script>
+        function validateCrossword() {
+            const inputs = document.querySelectorAll('.crossword input');
+            inputs.forEach(input => {
+                const expectedAnswer = input.getAttribute('data-answer');
+                if (input.value.toUpperCase() === expectedAnswer) {
+                    input.classList.add('correct');
+                    input.classList.remove('wrong');
+                } else if (input.value) {
+                    input.classList.add('wrong');
+                    input.classList.remove('correct');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
